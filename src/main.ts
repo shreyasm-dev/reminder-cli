@@ -13,7 +13,7 @@ const pkg = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf8'))
 const config = new Conf();
 
 program
-  .name(pkg.name)
+  .name('reminder')
   .version(pkg.version)
   .description(pkg.description);
 
