@@ -5,6 +5,7 @@ import { join } from 'path';
 import { readFileSync } from 'fs';
 import { program } from 'commander';
 import Conf from 'conf';
+import chalk from 'chalk';
 
 sourceMapSupport.install();
 
@@ -26,7 +27,7 @@ program
     console.log(
       json
         ? JSON.stringify(reminders)
-        : Object.entries(reminders).map(([text, done]) => `${done ? '[x]' : '[ ]'} ${text}`).join('\n'),
+        : Object.entries(reminders).map(([text, done]) => `${done ? chalk.red('[x]') : chalk.green('[ ]')} ${text}`).join('\n'),
     );
   });
 

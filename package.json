@@ -1,6 +1,6 @@
 {
   "name": "reminder-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reminders in your terminal",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@types/node": "^18.11.18",
+    "chalk": "^3.0.0",
     "commander": "^10.0.0",
     "conf": "^10.2.0",
     "source-map-support": "^0.5.21"
