@@ -38,7 +38,7 @@
   "dependencies": {
     "@types/node": "^18.11.18",
     "commander": "^10.0.0",
-    "conf": "^11.0.1",
+    "conf": "^10.2.0",
     "enquirer": "^2.3.6",
     "source-map-support": "^0.5.21"
   }
